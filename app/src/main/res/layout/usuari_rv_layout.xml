@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_rv_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Name"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_toRightOf="@id/imageview"
+        android:textSize="28dp"
+         />
+
+    <TextView
+        android:id="@+id/tv_rv_cognom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_toRightOf="@id/imageview"
+        android:layout_below="@id/tv_rv_nom"
+        tools:text="email" />
+
+    <TextView
+        android:id="@+id/tv_rv_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_toRightOf="@id/imageview"
+        android:layout_below="@id/tv_rv_cognom"
+        tools:text="role" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageview"
+        android:layout_marginTop="10dp"
+        android:background="#DAD8D8"
+        />
+
+</RelativeLayout>

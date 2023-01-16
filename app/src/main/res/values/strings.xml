@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DreamNote</string>
+    <string name="app_infothing">Your, dream. Your Note.</string>
+
+    <string name="bt_login">\nLog In</string>
+    <string name="app_infotitle">\nAbout Dream Note</string>
+    <string name="app_infodesc">\nDream Note is an app to help people organize their lives.
+        Our application will be a set of productivity utilities, something like an "all in one".
+        It has different features like: agenda, notepad, outlines, reminders, events, etc.\n
+        \nEach of the features of our program will have a different section within the application
+        so that you can navigate between them using a bar located at the bottom of the screen.\n
+        \nThe idea came to us because nowadays online courses, due to the recent pandemic, have increased
+        in popularity and more and more people are taking classes online. There are many people, especially
+        students, who cannot concentrate due to all the distractions they have at home and in order to keep
+        up with the pace of classes they need to organize their day to day. To achieve that, we want to create
+        an app that encompasses different features so you can organize your ideas without having to download multiple apps.\n
+    </string>
+    <string name="benvinguda">Bevingut</string>
+</resources>

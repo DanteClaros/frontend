@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdk 16
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures{
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'com.android.support:multidex:1.0.3'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    annotationProcessor 'androidx.annotation:annotation:1.5.0'
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    //GSON
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+    //CORUTINES
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+    //GLIDE
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+    //implementation 'androidx.core:core-ktx:1.9.0'
+    //implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.cardview:cardview:1.0.0"
+    //Las librerías que vamos a importar son las siguientes:
+    //
+    //Picasso: Esta librería nos permitirá transformar esas urls en imágenes.
+    //Retrofit 2: Librería encargada del consumo de las API.
+    //Retrofit 2 Converter Gson: Esta herramienta será un complemento a la anterior y nos simplificará el proceso de pasar un JSON a una Data Class que es con lo que trabajaremos en nuestro proyecto.
+    //Corrutinas: Entre otras muchas cosas nos permitirá hacer las peticiones de Retrofit en segundo plano para no bloquear la interfaz del usuario (lo explicaré más a fondo durante el artículo).
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+    implementation "com.squareup.picasso:picasso:2.71828"
+
+}
